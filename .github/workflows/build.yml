@@ -16,8 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           ls -a 
-          cd foodtrackv4
-          ls -a
+          
       - name: Instalamos Composer
         run: |
           sudo apt update
