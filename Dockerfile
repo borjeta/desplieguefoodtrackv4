@@ -37,9 +37,9 @@ WORKDIR /var/www/html
 #copiamos el contenido del repositorio a la carpeta html
 COPY ./foodtrackv4 /var/www/html
 
-
 #instalamos las dependencias de react
-RUN cd /var/www/html/material-kit-react-main && npm install
+RUN cd /var/www/html/material-kit-react-main 
+RUN npm install
 
 #levantamos los contenenedores de mysql y laravel
 
