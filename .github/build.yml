@@ -31,7 +31,7 @@ jobs:
           
       - name: Run Composer
         run: |
-          cd foodtrackv4/api
+          cd /foodtrackv4/api
           composer install
       - name: Run Laravel
         run: |
