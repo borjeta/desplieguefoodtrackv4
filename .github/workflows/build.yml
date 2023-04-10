@@ -32,8 +32,7 @@ jobs:
           cd desplieguefoodtrackv4 
           ls -a
           cd foodtrackv4
-          ls -a
-          cd ..
+          ls foodtrackv4
           ls -a 
           cd ..
           ls -a
