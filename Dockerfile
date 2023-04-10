@@ -37,17 +37,6 @@ WORKDIR /var/www/html
 #copiamos el contenido del repositorio a la carpeta html
 COPY ./foodtrackv4 /var/www/html
 
-#instalamos las dependencias de react
-RUN cd /var/www/html/material-kit-react-main 
-RUN npm install
-
-#levantamos los contenenedores de mysql y laravel
-
-RUN docker-compose up -d
-
-#exponemos el puerto 80
-EXPOSE 80
-
-RUN cd .. && cd /api && docker-compose up -d
+RUN ls -a
 
 
