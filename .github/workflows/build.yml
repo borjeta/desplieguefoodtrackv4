@@ -29,9 +29,12 @@ jobs:
           sudo apt install npm
       - name: hacemos el npm install
         run: |
-          cd desplieguefoodtrackv4/foodtrackv4/material-kit-react-main
+          cd desplieguefoodtrackv4 
           ls -a
-          npm install
+          cd foodtrackv4
+          ls -a
+          cd material-kit-react-main
+          ls -a
           
       - name: Instalamos Composer
         run: |
