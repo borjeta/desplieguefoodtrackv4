@@ -23,7 +23,8 @@ jobs:
           sudo apt install npm
       - name: hacemos el npm install
         run: |
-          cd foodtrackv4/material-kit-react-main
+          cd foodtrackv4
+          ls -a
           npm install
           
       - name: Instalamos Composer
