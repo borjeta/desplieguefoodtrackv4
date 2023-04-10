@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           ls -a
-          cd fooodtrackv4
+          cd foodtrackv4
           ls -a
           npm install
 
