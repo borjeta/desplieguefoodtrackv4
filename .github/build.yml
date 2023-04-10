@@ -28,7 +28,7 @@ jobs:
           echo $HASH
           php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
           sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-          
+
       - name: Run Composer
         run: |
           cd /foodtrackv4/api
@@ -44,3 +44,12 @@ jobs:
         #importa el archivo sql de la raiz llamado foodtrackv4.sql
         run: |
           mysql -u root < foodtrackv4.sql
+
+      - name: depliegue
+        run: |
+          cd foodtrackv4/material-kit-react-main
+          npm install 
+          npm run build
+          cd foodtrackv4/api
+          composer install
+          php artisan serve
