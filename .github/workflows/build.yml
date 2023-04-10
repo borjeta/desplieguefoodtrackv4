@@ -31,10 +31,7 @@ jobs:
         run: |
           cd desplieguefoodtrackv4 
           ls -a
-          cd foodtrackv4
-          ls -a
-          cd material-kit-react-main
-          ls -a
+        
           
       - name: Instalamos Composer
         run: |
