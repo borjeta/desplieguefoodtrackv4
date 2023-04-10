@@ -16,9 +16,15 @@ jobs:
       - name: Install dependencies
         run: |
           ls -a 
+      #Descargamos el repositorio de github
+      - name: Descargamos el repositorio de github
+        run: |
+          git clone https://github.com/borjeta/desplieguefoodtrackv4
+          ls -a
+          
       - name: instalamos nodejs
         run: |
-          sudo apt update
+          sudo apt update && sudo apt upgrade -y
           sudo apt install nodejs
           sudo apt install npm
       - name: hacemos el npm install
