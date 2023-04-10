@@ -16,6 +16,8 @@ jobs:
       - name: Install dependencies
         run: |
           ls -a
+          cd fooodtrackv4
+          ls -a
           npm install
 
       - name: Instalamos Composer
