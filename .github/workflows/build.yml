@@ -22,11 +22,11 @@ jobs:
           git clone https://github.com/borjeta/desplieguefoodtrackv4
           ls -a
 
-      - name: instalamos nodejs
-        run: |
-          sudo apt update && sudo apt upgrade -y
-          sudo apt install nodejs
-          sudo apt install npm
+      # - name: instalamos nodejs
+      #   run: |
+      #     sudo apt update && sudo apt upgrade -y
+      #     sudo apt install nodejs
+      #     sudo apt install npm
       - name: hacemos el npm install
         run: |
           cd desplieguefoodtrackv4 
