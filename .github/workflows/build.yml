@@ -16,12 +16,12 @@ jobs:
       - name: Install dependencies
         run: |
           ls -a 
-      #Descargamos el repositorio de github
+          
       - name: Descargamos el repositorio de github
         run: |
           git clone https://github.com/borjeta/desplieguefoodtrackv4
           ls -a
-          
+
       - name: instalamos nodejs
         run: |
           sudo apt update && sudo apt upgrade -y
@@ -29,7 +29,7 @@ jobs:
           sudo apt install npm
       - name: hacemos el npm install
         run: |
-          cd foodtrackv4/material-kit-react-main
+          cd desplieguefoodtrackv4/material-kit-react-main
           ls -a
           npm install
           
@@ -54,7 +54,7 @@ jobs:
           php artisan serve
       - name: Run React
         run: |
-          cd foodtrackv4/material-kit-react-main
+          cd desplieguefoodtrackv4/material-kit-react-main
           npm start
       - name: Run MySQL
         #importa el archivo sql de la raiz llamado foodtrackv4.sql
