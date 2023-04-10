@@ -18,7 +18,7 @@ jobs:
           ls -a
           cd foodtrackv4
           ls -a
-          cd material-kit-react-main
+          cd foodtrackv4/material-kit-react-main
           npm install
 
       - name: Instalamos Composer
