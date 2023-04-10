@@ -31,6 +31,8 @@ jobs:
         run: |
           cd desplieguefoodtrackv4 
           ls -a
+          cd foodtrackv4
+          ls -a
         
           
       - name: Instalamos Composer
