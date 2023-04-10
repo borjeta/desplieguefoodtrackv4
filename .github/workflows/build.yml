@@ -16,6 +16,15 @@ jobs:
       - name: Install dependencies
         run: |
           ls -a 
+      - name: instalamos nodejs
+        run: |
+          sudo apt update
+          sudo apt install nodejs
+          sudo apt install npm
+      - name: hacemos el npm install
+        run: |
+          cd foodtrackv4/material-kit-react-main
+          npm install
           
       - name: Instalamos Composer
         run: |
